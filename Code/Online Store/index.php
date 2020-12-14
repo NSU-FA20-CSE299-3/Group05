@@ -45,6 +45,26 @@
 		
 		</div>
 	</div>     <!-----top bar end---->
+      <div class="navbar navbar-default" id="navbar">
+            <div class="container">
+                  <div class="navbar-header">
+                        <a class="navbar-brand home" href="index.php">
+                              <img src="images/Logo.png" alt ="teehosting" class="hidden-xs">
+                              
+                        </a>
+                        
+                  </div>
+                  
+            </div>
+             
+      </div>
+
+
+
+
+
+
+
 </body>
 </html>
 	

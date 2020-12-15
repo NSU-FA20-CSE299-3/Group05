@@ -52,7 +52,16 @@
                               <img src="images/Logo.png" alt ="teehosting" class="hidden-xs">
                               
                         </a>
-                        
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                              <span class="sr-only"> Toggle Navigation</span>
+                              <i class="fa fa-align-justify"> </i>
+                              
+                        </button>
+                        <button type="button" class="navbar-toggle" data-toggle="navbar-toggle" data-target="#search">
+                              <span class="sr-only"></span>
+                              <i class="fa fa-search"></i>
+                              
+                        </button>
                   </div>
                   
             </div>

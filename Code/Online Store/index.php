@@ -138,10 +138,35 @@
                             <button class="btn navbar-btn btn-primary" type="button" data-toggle="cpllapse" data-target="#search">
                               <span class="sr-only"> Toggle Search</span>
                               <i class="fa fa-search"></i>
+                        </button>
+                  
+            </div>
+             <div class="collapse clearfix" id="search">
+
+                        <form class="navbar-form" method="get" action="result.php">
+                              <div class="input-group">
+                                    <input type="text" name="user_query" placeholder="Search" class="form-control" required="">
+                                    <button type="submit" value="Search" name="search" class="btn btn-primary">
+                                          <i class="fa fa-search"></i>
+                                          
+                                    </button>
+                                    
+                              </div>
+                              
+                        </form>
+                            
+                      </div>
+
+                  </div>
                   
             </div>
              
       </div>
+      
+      
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+             
+
 
 
 

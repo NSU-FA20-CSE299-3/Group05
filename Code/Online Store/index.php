@@ -148,8 +148,8 @@
                                     <input type="text" name="user_query" placeholder="Search" class="form-control" required="">
                                     <button type="submit" value="Search" name="search" class="btn btn-primary">
                                           <i class="fa fa-search"></i>
-                                          
-                                    </button>
+                                           </button>
+                              </span>
                                     
                               </div>
                               
@@ -161,6 +161,60 @@
                   
             </div>
              
+      </div>
+                                          
+                                   
+       <div id="advantages">
+            <div class="container"> <!---------container start------>
+                  <div class="same-height-row">
+                        <div class="col-sm-4">
+                              <div class="box-same-height">
+                                    <div  class="icon">
+                                          <i class="fa fa-heart"></i>
+                                                
+                                          
+                                          
+                                    </div>
+                                    <h3><a href="#">BEST PRICES</a></h3>
+                                    <p>You can check on all others sites about the prices and than compare with us.</p>
+                                    
+                              </div>
+                              
+                        </div>
+                        <div class="col-sm-4">
+                              <div class="box-same-height">
+                                    <div  class="icon">
+                                          <i class="fa fa-heart"></i>
+                                                
+                                          
+                                          
+                                    </div>
+                                    <h3><a href="#">100% SATISFACTION GUARANTED FROM US</a></h3>
+                                    <p>Free returns on everything for 3 months.</p>
+                                    
+                              </div>
+                              
+                        </div>
+                        <div class="col-sm-4">
+                              <div class="box-same-height">
+                                    <div  class="icon">
+                                          <i class="fa fa-heart"></i>
+                                                
+                                          
+                                          
+                                    </div>
+                                    <h3><a href="#">CUSTOMERS ARE OUR FIRST PRIORITY</a></h3>
+                                    <p>We are known to provide our best possible service.</p>
+                                    
+                              </div>
+                              
+                        </div>
+                        
+                  </div>
+                  
+
+            </div> <!-------container end------->
+            
       </div>
       
       

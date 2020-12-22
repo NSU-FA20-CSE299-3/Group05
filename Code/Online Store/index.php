@@ -168,7 +168,7 @@
             <div class="container"> <!---------container start------>
                   <div class="same-height-row">
                         <div class="col-sm-4">
-                              <div class="box-same-height">
+                              <div class="box same-height">
                                     <div  class="icon">
                                           <i class="fa fa-heart"></i>
                                                 
@@ -182,7 +182,7 @@
                               
                         </div>
                         <div class="col-sm-4">
-                              <div class="box-same-height">
+                              <div class="box same-height">
                                     <div  class="icon">
                                           <i class="fa fa-heart"></i>
                                                 
@@ -196,7 +196,7 @@
                               
                         </div>
                         <div class="col-sm-4">
-                              <div class="box-same-height">
+                              <div class="box same-height">
                                     <div  class="icon">
                                           <i class="fa fa-heart"></i>
                                                 

@@ -179,7 +179,7 @@
       </div>
                                           
                                    
-       <div id="advantages">
+       <div id="advantage">
             <div class="container"> <!---------container start------>
                   <div class="same-height-row">
                         <div class="col-sm-4">

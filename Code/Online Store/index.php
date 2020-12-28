@@ -231,6 +231,20 @@
             </div> <!-------container end------->
             
       </div>
+
+      <div id="hot">
+            <div class="box">
+                  <div class="container">
+                        <div class="col-md-12">
+                              <h2>Latest of the week</h2>
+                              
+                        </div>
+                        
+                  </div>
+                  
+            </div>
+            
+      </div>
       
       
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

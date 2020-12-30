@@ -329,6 +329,90 @@
                               
                         </div>
                   </div>
+
+                  <div class="col-sm-4 col-sm-6 single">
+                        <div class=""product>
+                              <a href="details.php">
+                                    <img src="admin_area/product_images/Craft1.jpg" class="img_responsive">
+                              </a>
+                              <div class="text">
+                                    <h3><a href="details.php">Flower Basket</a></h3>
+                                    <p class="price">BDT 500</p>
+                                    <p class="buttons">
+                                          <a href="details.php" class="btn btn-default">View Details</a>
+                                          <a href="details.php" class="btn btn-primary">
+                                                <i class="fa fa-shopping-cart"></i> Add to cart
+                                          </a>
+                                          
+                                    </p>
+                                    
+                              </div>
+                              
+                        </div>
+                  </div>
+
+                  <div class="col-sm-4 col-sm-6 single">
+                        <div class=""product>
+                              <a href="details.php">
+                                    <img src="admin_area/product_images/Craft1.jpg" class="img_responsive">
+                              </a>
+                              <div class="text">
+                                    <h3><a href="details.php">Flower Basket</a></h3>
+                                    <p class="price">BDT 500</p>
+                                    <p class="buttons">
+                                          <a href="details.php" class="btn btn-default">View Details</a>
+                                          <a href="details.php" class="btn btn-primary">
+                                                <i class="fa fa-shopping-cart"></i> Add to cart
+                                          </a>
+                                          
+                                    </p>
+                                    
+                              </div>
+                              
+                        </div>
+                  </div>
+
+                  <div class="col-sm-4 col-sm-6 single">
+                        <div class=""product>
+                              <a href="details.php">
+                                    <img src="admin_area/product_images/Craft1.jpg" class="img_responsive">
+                              </a>
+                              <div class="text">
+                                    <h3><a href="details.php">Flower Basket</a></h3>
+                                    <p class="price">BDT 500</p>
+                                    <p class="buttons">
+                                          <a href="details.php" class="btn btn-default">View Details</a>
+                                          <a href="details.php" class="btn btn-primary">
+                                                <i class="fa fa-shopping-cart"></i> Add to cart
+                                          </a>
+                                          
+                                    </p>
+                                    
+                              </div>
+                              
+                        </div>
+                  </div>
+
+                  <div class="col-sm-4 col-sm-6 single">
+                        <div class=""product>
+                              <a href="details.php">
+                                    <img src="admin_area/product_images/Craft1.jpg" class="img_responsive">
+                              </a>
+                              <div class="text">
+                                    <h3><a href="details.php">Flower Basket</a></h3>
+                                    <p class="price">BDT 500</p>
+                                    <p class="buttons">
+                                          <a href="details.php" class="btn btn-default">View Details</a>
+                                          <a href="details.php" class="btn btn-primary">
+                                                <i class="fa fa-shopping-cart"></i> Add to cart
+                                          </a>
+                                          
+                                    </p>
+                                    
+                              </div>
+                              
+                        </div>
+                  </div>
                   
             </div>
             

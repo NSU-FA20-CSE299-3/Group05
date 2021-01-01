@@ -232,7 +232,7 @@ body{
     }
     #footer ul a{
         color: #999999;
-        padding: 20px 0;
+        padding: 20px 0; 
     }
     #footer .social{
         text-align: left;
@@ -250,4 +250,16 @@ body{
         transform: all 0.2s ease-out;
         vertical-align: bottom;
         background-color: #555555;
+    }
+
+    /*----------------Copyright section-----------------*/
+
+    #copyright{
+        background:#333;
+        color: #CCC;
+        padding: 20px;
+        font-size: 12px;
+    }
+    #copyright p{
+        margin: 0;
     }

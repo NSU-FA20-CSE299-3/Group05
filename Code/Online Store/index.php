@@ -498,11 +498,33 @@
       </div>
       
 </div>
+<div id="copyright">
+<div class="copyright"> <!---------- copyright section start------->
+
+      <div class="container">
+            <div class="col-md-6">
+                  <p class="pull-left">
+                        &copy; 2021 Mahbub Hasan Prantik
+                        
+                  </p>
+                  
+            </div>
+            <div class="col-md-6">
+                  <p class="pull-right">
+                        Tamplate By: <a href="mahbubhasan2033@gmail.com">mahbubhasan2033@gmail.com</a></p>
+                  
+            </div>
+            
+      </div>
+</div>
+
             
       </div>
       </div>
       
 </div>
+</div>
+
 
      
 

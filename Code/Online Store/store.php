@@ -149,10 +149,146 @@
                         ?>
                         
                   </div>
-                  
-            </div> <!-----------------Container End---------------->
-            
+                  <div class="col-md-9">
+                        <div class="box">
+                              <h1>Store</h1>
+                              <p>this theme is created by Mahbub Hasan Prantik, who is a student of NSU</p>
+                              
+                        </div>
+                        <div class="row">
+                              
+                        <div class="col-md-4 col-sm-6 center responsive">
+                                    <div class="product">
+                                          <a href="details.php">
+                                          <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
+                                          </a>
+                                          <div class="text">
+                                                <h3>
+                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                </h3>
+                                                <p class="price">BDT 500</p>
+                                                <p class="buttons">
+                                                      <a href="details.php" class="btn btn-default"> View Details</a>
+                                                      <a href="details.php" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                </p>
+                                                
+                                          </div>
+                                    </div>
+                                    
+                              </div>
+
+                              <div class="col-md-4 col-sm-6 center responsive">
+                                    <div class="product">
+                                          <a href="details.php">
+                                          <img src="admin_area/product_images/vangogh2.jpg" class="img-responsive">
+                                          </a>
+                                          <div class="text">
+                                                <h3>
+                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                </h3>
+                                                <p class="price">BDT 500</p>
+                                                <p class="buttons">
+                                                      <a href="details.php" class="btn btn-default"> View Details</a>
+                                                      <a href="details.php" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                </p>
+                                                
+                                          </div>
+                                    </div>
+                                    
+                              </div>
+
+                              <div class="col-md-4 col-sm-6 center responsive">
+                                    <div class="product">
+                                          <a href="details.php">
+                                          <img src="admin_area/product_images/Zainul1.jpg" class="img-responsive">
+                                          </a>
+                                          <div class="text">
+                                                <h3>
+                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                </h3>
+                                                <p class="price">BDT 500</p>
+                                                <p class="buttons">
+                                                      <a href="details.php" class="btn btn-default"> View Details</a>
+                                                      <a href="details.php" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                </p>
+                                                
+                                          </div>
+                                    </div>
+                                    
+                              </div>
+
+                              <div class="col-md-4 col-sm-6 center responsive">
+                                    <div class="product">
+                                          <a href="details.php">
+                                          <img src="admin_area/product_images/zainul2.jpg" class="img-responsive">
+                                          </a>
+                                          <div class="text">
+                                                <h3>
+                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                </h3>
+                                                <p class="price">BDT 500</p>
+                                                <p class="buttons">
+                                                      <a href="details.php" class="btn btn-default"> View Details</a>
+                                                      <a href="details.php" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                </p>
+                                                
+                                          </div>
+                                    </div>
+                                    
+                              </div>
+
+                              <div class="col-md-4 col-sm-6 center responsive">
+                                    <div class="product">
+                                          <a href="details.php">
+                                          <img src="admin_area/product_images/Sultan1.jpg" class="img-responsive">
+                                          </a>
+                                          <div class="text">
+                                                <h3>
+                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                </h3>
+                                                <p class="price">BDT 500</p>
+                                                <p class="buttons">
+                                                      <a href="details.php" class="btn btn-default"> View Details</a>
+                                                      <a href="details.php" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                </p>
+                                                
+                                          </div>
+                                    </div>
+                                    
+                              </div>
+
+                              <div class="col-md-4 col-sm-6 center responsive">
+                                    <div class="product">
+                                          <a href="details.php">
+                                          <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
+                                          </a>
+                                          <div class="text">
+                                                <h3>
+                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                </h3>
+                                                <p class="price">BDT 500</p>
+                                                <p class="buttons">
+                                                      <a href="details.php" class="btn btn-default"> View Details</a>
+                                                      <a href="details.php" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                </p>
+                                                
+                                          </div>
+                                    </div>
+                                    
+                              </div>
+
+
+                        </div>
+                  </div>
+            </div>
       </div>
+
+
+
+                  
+             <!-----------------Container End---------------->
+            
+      
 
 
 
@@ -193,7 +329,7 @@
             <div class="col-md-3 col-sm-6">
                   <h4>Where to find us</h4>
                   <p>
-                        <strong>Teehosting.com</strong>
+                        <strong>North South University </strong>
                         <br>Bashundhara
                         <br> Dhaka
                         <br>Bangladesh
@@ -248,7 +384,7 @@
             </div>
             <div class="col-md-6">
                   <p class="pull-right">
-                        Tamplate By: <a href="mahbubhasan2033@gmail.com"></a></p>
+                        Tamplate By: <a href="mahbubhasan2033@gmail0.com">"mahbubhasan2033@gmail.com"</a></p>
                   
             </div>
             

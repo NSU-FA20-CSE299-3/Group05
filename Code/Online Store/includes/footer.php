@@ -34,7 +34,7 @@
       	<div class="col-md-3 col-sm-6">
       		<h4>Where to find us</h4>
       		<p>
-      			<strong>Teehosting.com</strong>
+      			<strong>North South University</strong>
       			<br>Bashundhara
       			<br> Dhaka
       			<br>Bangladesh
@@ -89,10 +89,11 @@
 		</div>
 		<div class="col-md-6">
 			<p class="pull-right">
-				Tamplate By: <a href="mahbubhasan2033@gmail.com"></a></p>
+				Tamplate By: <a href="mahbubhasan2033@gmail.com">"mahbubhasan2033@gmail.com"</a></p>
 			
 		</div>
 		
 	</div>
 </div>
 </div>
+

@@ -134,7 +134,7 @@
 
 
       <div id="content">
-            <div class="container">
+            <div class="container"> <!-------------------------------Container start-------------->
                   <div class="col-md-12">
                         <ul class="breadcrumb">
                               <li><a href="home.php">Home</a></li>
@@ -143,8 +143,14 @@
                         </ul>
                         
                   </div>
+                  <div class="col-md-3">
+                        <?php
+                        include("includes/sidebar.php");
+                        ?>
+                        
+                  </div>
                   
-            </div>
+            </div> <!-----------------Container End---------------->
             
       </div>
 

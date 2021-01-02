@@ -277,8 +277,22 @@
                                     
                               </div>
 
+                        </div> <!------------- row end------------->
+                        <center>
+                              <ul class="pagination">
+                                    <li><a href="store.php">First Page</a></li>
+                                     <li><a href="store.php">2</a></li>
+                                     <li><a href="store.php">3</a></li>
+                                     <li><a href="store.php">4</a></li>
+                                     <li><a href="store.php">5</a></li>
+                                     <li><a href="store.php">Last Page</a></li>
+                                     
+                                     
+                                     
+                                    
+                              </ul>
+                        </center>
 
-                        </div>
                   </div>
             </div>
       </div>

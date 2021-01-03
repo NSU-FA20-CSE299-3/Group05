@@ -184,7 +184,7 @@
                                           </a>
                                           <div class="text">
                                                 <h3>
-                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                      <a href="details.php">The Yellow House(1888)</a>
                                                 </h3>
                                                 <p class="price">BDT 500</p>
                                                 <p class="buttons">
@@ -204,7 +204,7 @@
                                           </a>
                                           <div class="text">
                                                 <h3>
-                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                      <a href="details.php">The Famine Sketches, 1943 </a>
                                                 </h3>
                                                 <p class="price">BDT 500</p>
                                                 <p class="buttons">
@@ -224,7 +224,7 @@
                                           </a>
                                           <div class="text">
                                                 <h3>
-                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                      <a href="details.php">Liberation War, 1971</a>
                                                 </h3>
                                                 <p class="price">BDT 500</p>
                                                 <p class="buttons">
@@ -244,7 +244,7 @@
                                           </a>
                                           <div class="text">
                                                 <h3>
-                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                      <a href="details.php">Husking Rice</a>
                                                 </h3>
                                                 <p class="price">BDT 500</p>
                                                 <p class="buttons">
@@ -260,11 +260,11 @@
                               <div class="col-md-4 col-sm-6 center responsive">
                                     <div class="product">
                                           <a href="details.php">
-                                          <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
+                                          <img src="admin_area/product_images/Craft.jpg" class="img-responsive">
                                           </a>
                                           <div class="text">
                                                 <h3>
-                                                      <a href="details.php">Almond Blossoms(1888)</a>
+                                                      <a href="details.php">Van Gogh</a>
                                                 </h3>
                                                 <p class="price">BDT 500</p>
                                                 <p class="buttons">

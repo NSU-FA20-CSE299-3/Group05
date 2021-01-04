@@ -171,14 +171,14 @@
                                           </div>
                                           <div class="item">
                                                 <center>
-                                    <img src="admin_area/product_images/vangogh2.jpg" class="img-responsive">
+                                    <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
                                                 </center>
                                                 
                                           </div>
 
                                           <div class="item">
                                                 <center>
-                                    <img src="admin_area/product_images/Zainul1.jpg" class="img-responsive">
+                                    <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
                                                 </center>
                                                 
                                           </div>
@@ -228,10 +228,10 @@
                                     </div>
 
                                     <div class="form-group">
-                                          <label class="col-md-5 control-label">Product Size</label>
+                                          <label class="col-md-5 control-label">Choose A Size</label>
                                           <div class="col-md-7">
                                                 <select name="product_size" class="form-control">
-                                                      <option>Size to print</option>
+                                                      <option></option>
                                                       <option> 13.8 W x 15.7 H x 1.2 D</option>
                                                       <optio>Medium</option>
                                                       <option>Large</option>

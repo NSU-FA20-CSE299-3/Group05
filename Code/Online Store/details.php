@@ -206,6 +206,47 @@
                               
                         </div>
                         
+                  </div> <!------------------ col-sm-6 slider end------------------>
+                  <div class="col-sm-6">
+                        <div class="box">
+                              <h1 class="text-center"> Almond Blossoms is from a group of several paintings made in 1888 and 1890 by Vincent van Gogh in Arles and Saint-Rémy, southern France of blossoming almond trees.</h1>
+                              <form action="details.php" method="post" class="form-horizontal">
+                                    <div class="form-group">
+                                          <label class="col-md-5 control-label">Product Quantity</label>
+                                          <div class="col-md-7">
+                                                <select name="product_qty" class="form-control">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                      <option>4</option>
+                                                      <option>5</option>
+                                                      
+                                                </select>
+                                                
+                                          </div>
+                                          
+                                    </div>
+
+                                    <div class="form-group">
+                                          <label class="col-md-5 control-label">Product Size</label>
+                                          <div class="col-md-7">
+                                                <select name="product_size" class="form-control">
+                                                      <option>Size to print</option>
+                                                      <option> 13.8 W x 15.7 H x 1.2 D</option>
+                                                      <optio>Medium</option>
+                                                      <option>Large</option>
+                                                      <option>Extra Large</option>
+                                                      
+                                                </select>
+                                                
+                                          </div>
+                                          
+                                    </div>
+                                    
+                              </form>
+                              
+                        </div>
+                        
                   </div>
 
                   

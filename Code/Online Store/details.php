@@ -241,12 +241,37 @@
                                                 
                                           </div>
                                           
-                                    </div>
+                                    </div> 
+                                    <p class="price">BDT 500</p>
+                                    <p class="text-center-buttons">
+                                          <button class="btn btn-primary" type="submit">
+                                                <i class="fa fa-shopping-cart"></i>Add to cart
+                                                
+                                          </button>
+                                    </p>
+
                                     
                               </form>
                               
                         </div>
-                        
+                        <div class="col-xs-4">
+                              <a href="#" class="thumb"></a>
+                              <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
+                              
+                        </div>
+                        <div class="col-xs-4">
+                              <a href="#" class="thumb"></a>
+                              <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
+                              
+                        </div>
+                        <div class="col-xs-4">
+                              <a href="#" class="thumb"></a>
+                              <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
+                              
+                        </div>
+
+
+                           
                   </div>
 
                   

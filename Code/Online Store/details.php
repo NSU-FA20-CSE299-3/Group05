@@ -298,7 +298,7 @@
             <div id="row same-height-row">
                   <div class="col-md-3 col-sm-6">
                         <div class="box same-height headline">
-                              <h3 class="text-center">Related Art Iteams</h3>
+                              <h3 class="text-center">Related Art Items</h3>
                               
                         </div>
                         

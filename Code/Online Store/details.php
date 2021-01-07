@@ -233,9 +233,8 @@
                                                 <select name="product_size" class="form-control">
                                                       <option></option>
                                                       <option> 13.8 W x 15.7 H x 1.2 D</option>
-                                                      <optio>Medium</option>
-                                                      <option>Large</option>
-                                                      <option>Extra Large</option>
+                                                      <option>39.4 W x 31.5 H x 0.8 D</option>
+                                                      
                                                       
                                                 </select>
                                                 
@@ -265,8 +264,9 @@
                               
                         </div>
                         <div class="col-xs-4">
-                              <a href="#" class="thumb"></a>
+                              <a href="#" class="thumb">
                               <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
+                        </a>
                               
                         </div>
 
@@ -274,6 +274,73 @@
                            
                   </div>
 
+                  
+            </div>
+
+            <div class="box" id="details">
+                  <h4>Product Details</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+
+                  <h4>Style</h4>
+                  <ul>
+                        
+
+                       <li>Pop Art</li>
+                       <li>Modern,Pop Art, Modern, Realism </li>
+                       <li>Mediums:Acrylic</li>
+                      <li>Materials:Canvas</li>
+                       
+                  </ul>
+                  
+            </div>
+
+            <div id="row same-height-row">
+                  <div class="col-md-3 col-sm-6">
+                        <div class="box same-height headline">
+                              <h3 class="text-center">Related Art Iteams</h3>
+                              
+                        </div>
+                        
+                  </div>
+                  <div class="center-responsive col-md-3">
+                        <div class="product same-height">
+                              <a href="">
+                                    <img src="admin_area/product_images/starrynight.png" class="img-responsive">
+                              </a>
+                              <div class="text">
+                                    <h3><a href="details.php">Van Gogh</a></h3>
+                                    <p class="price">BDT 500</p>
+                                    
+                              </div>
+                        </div>
+                  </div>
+                  
+            </div>
+             <div class="center-responsive col-md-3">
+                        <div class="product same-height">
+                              <a href="">
+                                    <img src="admin_area/product_images/Prisoners-Exercising1.jpg" class="img-responsive">
+                              </a>
+                              <div class="text">
+                                    <h3><a href="details.php">Prisoners Exercising</a></h3>
+                                    <p class="price">BDT 500</p>
+                                    
+                              </div>
+                        </div>
+                  </div>
+                   <div class="center-responsive col-md-3">
+                        <div class="product same-height">
+                              <a href="">
+                                    <img src="admin_area/product_images/nightcafe1.jpg" class="img-responsive">
+                              </a>
+                              <div class="text">
+                                    <h3><a href="details.php">night cafe</a></h3>
+                                    <p class="price">BDT 500</p>
+                                    
+                              </div>
+                        </div>
+                  </div>
                   
             </div>
             

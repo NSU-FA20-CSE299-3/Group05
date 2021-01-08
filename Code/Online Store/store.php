@@ -71,7 +71,7 @@
                                           
                                     </li>
                                     <li class="active">
-                                          <a href="shop.php">Store</a>
+                                          <a href="store.php">Store</a>
                                     </li>
                                     <li>
                                           <a href="checkout.php">My Account</a>
@@ -295,7 +295,7 @@
 
                   </div>
             </div>
-      </div>
+      </div><!----------------------------Content end--------------------->
 
 
 
@@ -315,7 +315,7 @@
                   <ul>
                         <li><a href="cart.php">Shopping Cart</a></li>
                         <li><a href="contact.php">Contact Us</a></li>
-                        <li><a href="shop.php">Shop</a></li>
+                        <li><a href="store.php">Shop</a></li>
                         <li><a href="checkout.php">My Account</a></li>
                   </ul>
                   <hr>

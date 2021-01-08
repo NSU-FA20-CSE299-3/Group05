@@ -71,7 +71,7 @@
                                           
                                     </li>
                                     <li>
-                                          <a href="shop.php">Store</a>
+                                          <a href="store.php">Store</a>
                                     </li>
                                     <li>
                                           <a href="checkout.php">My Account</a>
@@ -86,7 +86,7 @@
                                           <a href="services.php">Services</a>
                                     </li>
                                     <li>
-                                          <a href="contactus.php"> Contact Us</a>
+                                          <a href="contactus.php"> Contact Us </a>
                                     </li>
                                     
                                     

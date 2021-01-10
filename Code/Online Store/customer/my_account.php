@@ -192,6 +192,17 @@
                         include("change_pass.php");
                   }
                         ?>
+                        <!------- including change password.php page end--------------->
+
+
+
+                        <!------- including Delete account.php page start--------------->
+                        <?php
+                        if(isset($_GET['delete_act'])){
+
+                        include("delete_act.php");
+                  }
+                        ?>
 
 
                   

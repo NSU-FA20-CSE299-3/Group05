@@ -150,15 +150,31 @@
                         
                   </div>
 
-                  <div class="col-md-9">
+                  <div class="col-md-9">  <!------- including my order.php page srart---------------->
                         <?php
                         if(isset($_GET['my_order'])){
 
                         include("my_order.php");
                   }
                         ?>
-                        
-                  </div>
+
+
+                        <!------- including my order.php page end---------------->
+
+
+
+                        <!------- including Payoffline.php page start---------------->
+
+                        <?php
+                        if(isset($_GET['pay_offline'])){
+
+                        include("pay_offline.php");
+                  }
+                        ?>
+
+                           <!------- including Payoffline.php page end---------------->
+                  
+                  </div> 
 
 
 

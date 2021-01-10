@@ -150,6 +150,16 @@
                         
                   </div>
 
+                  <div class="col-md-9">
+                        <?php
+                        if(isset($_GET['my_order'])){
+
+                        include("my_order.php");
+                  }
+                        ?>
+                        
+                  </div>
+
 
 
 

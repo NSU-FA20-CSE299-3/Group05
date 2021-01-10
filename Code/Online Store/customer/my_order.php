@@ -32,6 +32,7 @@
 				<td>11111</td>
 				<td>2</td>
 				<td>LARGE</td>
+				<td>2020-01-11</td>
 				<td>Unpaid</td>
 				<td><a href="confirm.php" target="_blank" class="btn btn-primary btn-sm">Confirm If Paid</a></td>
 
@@ -41,7 +42,9 @@
 				<td>BDT 500</td>
 				<td>11111</td>
 				<td>2</td>
+
 				<td>LARGE</td>
+				<td>2020-01-11</td>
 				<td>Unpaid</td>
 				<td><a href="confirm.php" target="_blank" class="btn btn-primary btn-sm">Confirm If Paid</a></td>
 
@@ -52,6 +55,7 @@
 				<td>11111</td>
 				<td>2</td>
 				<td>LARGE</td>
+				<td>2020-01-11</td>
 				<td>Unpaid</td>
 				<td><a href="confirm.php" target="_blank" class="btn btn-primary btn-sm">Confirm If Paid</a></td>
 

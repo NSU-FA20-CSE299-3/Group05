@@ -1,3 +1,8 @@
+<?php
+include("includes/db.php");
+
+?>
+
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
@@ -137,29 +142,39 @@
                            
                            <ol class="carousel-indicators">   
 
-                              <li data-target="myCarousel" data-slide-to="0" class="action"></li>
+                              <li data-target="myCarousel" data-slide-to="0" class="active"></li>
                                <li data-target="myCarousel" data-slide-to="1"></li>
                                <li data-target="myCarousel" data-slide-to="2"></li>
                                 <li data-target="myCarousel" data-slide-to="3"></li>
                         </ol>
                         <div class="carousel-inner">
-                              <div class="item active">
-                                    <img src="admin_area/slider_images/sl1.png">
+                              <?php
+                              $get_slider= "select * from slider LIMIT 0,1";
+                              $run_slider= mysqli_query($con,$get_slider);
+                              while($row_slider=mysqli_fetch_array($run_slider)){
+
+                              $slide_name=$row_slider['slider_name'];
+                              $slider_image=$row_slider['slider_image'];
+                              echo "<div class='item active'>
+                                    <img src='admin_area/slider_images/$slider_image'>
                                     
-                              </div>
-                               <div class="item">
-                                    <img src="admin_area/slider_images/sl2.jpg">
+                              </div>";
+
+                        }
+                        $get_slider= "select * from slider LIMIT 1,3";
+                              $run_slider= mysqli_query($con,$get_slider);
+                              while($row_slider=mysqli_fetch_array($run_slider)){
+
+                              $slide_name=$row_slider['slider_name'];
+                              $slider_image=$row_slider['slider_image'];
+                              echo "<div class='item'>
+                                    <img src='admin_area/slider_images/$slider_image'>
                                     
-                              </div>
-                               <div class="item">
-                                    <img src="admin_area/slider_images/sl3.jpg">
-                                    
-                              </div>
-                              <div class="item">
-                                    <img src="admin_area/slider_images/sl4.jpg">
-                                    
-                              </div>
-                              
+                              </div>";
+
+                        }
+
+                              ?>
                         </div>
                         
                         <a href="#myCarousel" class="left carousel-control" data-slide="prev">

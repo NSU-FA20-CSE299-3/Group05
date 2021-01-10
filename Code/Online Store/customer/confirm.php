@@ -157,9 +157,41 @@
                               <form action="confirm.php" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                           <label>Invoice Number</label>
-                                          <input type="text" class="form-control" name="invoice_nymber" required="">
+                                          <input type="text" class="form-control" name="invoice_number" required="">
                                           
                                     </div>
+                                    <div class="form-group">
+                                          <label>Amount</label>
+                                          <input type="text" class="form-control" name="amount" required="">
+                                          
+                                    </div>
+                                    <div class="form-group">
+                                          <label>Select Payment Mode</label>
+                                          <select class="form-control" name="payment_mode">
+                                                <option>Bank transfer</option>
+                                                <option>Card</option>
+                                                <option>Bkash</option>
+                                          </select>
+                                          
+                                    </div>
+                                    <div class="form-group">
+                                          <label>Transrction Number</label>
+                                          <input type="text" class="form-control" name="trfr_number" required="">
+                                          
+                                    </div>
+                                    <div class="form-group">
+                                          <label>Payment Date</label>
+                                          <input type="date" class="form-control" name="date" required="">
+                                          
+                                    </div>
+                                    <div class="text-center">
+                                          <button type="submit" name="confirm_payment" class="btn btn-primary btn-lg">
+                                                Confirm Payment
+                                          </button>
+                                          
+                                    </div>
+                                    
+
                                     
                               </form>
                               

@@ -173,6 +173,15 @@
                         ?>
 
                            <!------- including Payoffline.php page end---------------->
+
+                            <!------- including Edit account.php page start--------------->
+
+                        <?php
+                        if(isset($_GET['edit_act'])){
+
+                        include("edit_act.php");
+                  }
+                        ?>
                   
                   </div> 
 

@@ -18,11 +18,7 @@
     				<i class="fa fa-bolt"></i>Pay Offline
     			</a>
     		</li>
-    		<li class="<?php if(isset($_GET['my_address'])){echo"active";} ?>">
-    			<a href="my_account.php?my_address">
-    				<i class="fa fa-user"></i>My Address
-    			</a>
-    		</li>
+    		
     		<li class="<?php if(isset($_GET['edit_act'])){echo"active";} ?>">
     			<a href="my_account.php?edit_act">
     				<i class="fa fa-pencil"></i>Edit Account

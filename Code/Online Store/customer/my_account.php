@@ -182,6 +182,18 @@
                         include("edit_act.php");
                   }
                         ?>
+
+                         <!------- including Edit account.php page end--------------->
+
+                         <!------- including change password.php page start--------------->
+                        <?php
+                        if(isset($_GET['change_pass'])){
+
+                        include("change_pass.php");
+                  }
+                        ?>
+
+
                   
                   </div> 
 

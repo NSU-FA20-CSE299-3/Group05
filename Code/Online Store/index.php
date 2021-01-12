@@ -8,6 +8,8 @@ include("includes/db.php");
 <html>
 <head>
       <title>Online Art Store</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="styles/style.css">
 <!-- jQuery library -->
@@ -167,7 +169,7 @@ include("includes/db.php");
 
                               $slide_name=$row_slider['slider_name'];
                               $slider_image=$row_slider['slider_image'];
-                              echo "<div class='item'>
+                              echo "<div class='item'> 
                                     <img src='admin_area/slider_images/$slider_image'>
                                     
                               </div>";

@@ -335,7 +335,7 @@ include("functions/functions.php");
                        
                    </ul><!-- pagination Finish -->
                </center>
-                
+                 <?php getpcatpro(); ?> 
                 
                
            </div><!-- col-md-9 Finish -->

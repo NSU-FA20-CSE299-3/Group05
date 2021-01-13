@@ -22,12 +22,8 @@
       	<div class="col-md-3 col-sm-6">
       		<h4>Top Product Categories</h4>
       		<ul>
-      			<li><a href="#">Bengali Arts & Crafts</a></li>
-      			<li><a href="#">Ancient Europe</a></li>
-      			<li><a href="#">Modern</a></li>
-      			<li><a href="#">Post Modern</a></li>
-      			<li><a href="#">Digital Arts</a></li>
-      		</ul>
+                        
+                  </ul>
       		<hr class="hidden-md hidden-lg">
       		
       	</div>

@@ -35,19 +35,35 @@ function getPro(){
 	}
 }
 
+
 /*----------------- Catagory---------------*/
 
 function getPCats(){
 	global $db;
-	$get_p_cats=" select * from categories";
+	$get_cat=" select * from categories";
 
-    $run_p_cats=mysqli_query($db,$get_p_cats);
-    while($row_p_cats=mysqli_fetch_array($run_p_cats)){
-    	$p_cat_id=row_p_cats['cat_id'];
-    	$p_cat_id=row_p_cats['cat_title'];
-    	echo"<li><a href='store.php?p_cat=$cat_id'>$cat_title</a></li>";
+    $run_cat=mysqli_query($db,$get_cat);
+    while($row_cat=mysqli_fetch_array($run_cat)){
+    	$cat_id=$row_cat['cat_id'];
+    	$cat_title=$row_cat['cat_title'];
+    	echo"<li><a href='store.php?cat_id=$cat_id'>$cat_title</a></li>";
     }
 
 }
+
+/*--------------Artists-----------------*/
+function getCat(){
+	global $db;
+	$get_artists=" select * from artists";
+
+    $run_artists=mysqli_query($db,$get_artists);
+    while($row_artists=mysqli_fetch_array($run_artists)){
+    	$artists_id=$row_artists['Artists_id'];
+    	$artists_name=$row_artists['Artists_name'];
+    	echo"<li><a href='store.php?artists_id=$artists_id'>$artists_name</a></li>";
+    }
+
+}
+
 
 ?>

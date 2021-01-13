@@ -22,7 +22,16 @@
       	<div class="col-md-3 col-sm-6">
       		<h4>Top Product Categories</h4>
       		<ul>
-                        
+                          <?php
+                        $get_p_cats="select * from  categories";
+                        $run_p_cats=mysqli_query($con,$get_p_cats );
+                        while($row_p_cat=mysqli_fetch_array($run_p_cats)){
+                        $cat_id=$row_p_cat['cat_id'];
+                        $cat_title=$row_p_cat['cat_title'];
+                        echo "<li><a href='store.php?p_cat=$cat_id'>$cat_title</a></li>";
+                  }
+
+                        ?>
                   </ul>
       		<hr class="hidden-md hidden-lg">
       		

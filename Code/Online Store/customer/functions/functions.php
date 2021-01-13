@@ -35,19 +35,4 @@ function getPro(){
 	}
 }
 
-/*----------------- Catagory---------------*/
-
-function getPCats(){
-	global $db;
-	$get_p_cats=" select * from categories";
-
-    $run_p_cats=mysqli_query($db,$get_p_cats);
-    while($row_p_cats=mysqli_fetch_array($run_p_cats)){
-    	$p_cat_id=row_p_cats['cat_id'];
-    	$p_cat_id=row_p_cats['cat_title'];
-    	echo"<li><a href='store.php?p_cat=$cat_id'>$cat_title</a></li>";
-    }
-
-}
-
 ?>

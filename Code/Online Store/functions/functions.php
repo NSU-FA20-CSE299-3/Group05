@@ -46,7 +46,7 @@ function getPCats(){
     while($row_cat=mysqli_fetch_array($run_cat)){
     	$cat_id=$row_cat['cat_id'];
     	$cat_title=$row_cat['cat_title'];
-    	echo"<li><a href='store.php?cat_id=$cat_id'>$cat_title</a></li>";
+    	echo"<li><a href='store.php?cat=$cat_id'>$cat_title</a></li>";
     }
 
 }
@@ -60,7 +60,7 @@ function getCat(){
     while($row_artists=mysqli_fetch_array($run_artists)){
     	$artists_id=$row_artists['Artists_id'];
     	$artists_name=$row_artists['Artists_name'];
-    	echo"<li><a href='store.php?artists_id=$artists_id'>$artists_name</a></li>";
+    	echo"<li><a href='store.php?artists=$artists_id'>$artists_name</a></li>";
     }
 
 }

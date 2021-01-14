@@ -141,9 +141,133 @@ function getpcatpro(){
             
                 <div class='box'>
                 
-                    <h1> $cat_title </h1>
+                    <h1> $cat_title</h1>
                     
-                    <p> $cat_desc </p>
+                    <p> $cat_desc</p>
+                
+                </div>
+            
+            ";
+            
+        }
+        
+        while($row_products=mysqli_fetch_array($run_products)){
+            
+            $product_id = $row_products['product_id'];
+        
+            $product_title = $row_products['product_title'];
+
+            $product_price = $row_products['product_price'];
+
+            $product_img1 = $row_products['product_img1'];
+            
+            echo "
+            
+                <div class='col-md-4 col-sm-6 center-responsive'>
+        
+            <div class='product'>
+            
+                <a href='details.php?pro_id=$product_id'>  
+                
+                    <img class='img-responsive' src='admin_area/product_images/$product_img1'>
+                
+                </a>
+                
+                <div class='text'>
+                
+                    <h3>
+            
+                        <a href='details.php?product_id=$product_id'>
+
+                            $product_title
+
+                        </a>
+                    
+                    </h3>
+                    
+                    <p class='price'>
+                    
+                        $ $product_price
+                    
+                    </p>
+                    
+                    <p class='button'>
+                    
+                        <a class='btn btn-default' href='details.php?product_id=$product_id'>
+
+                            View Details
+
+                        </a>
+                    
+                        <a class='btn btn-primary' href='details.php?product_id=$product_id'>
+
+                            <i class='fa fa-shopping-cart'></i> Add to Cart
+
+                        </a>
+                    
+                    </p>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+            
+            ";
+            
+        }
+        
+    }
+    
+}
+
+/// finish getpcatpro functions ///
+
+function getcatpro(){
+    
+    global $db;
+    
+    if(isset($_GET['artists'])){
+        
+        $Artists_id = $_GET['artists'];
+        
+        $get_artists ="select * from artists where Artists_id='$Artists_id'";
+        
+        $run_artists = mysqli_query($db,$get_artists);
+        
+        $row_artists = mysqli_fetch_array($run_artists);
+        
+        $Artists_name = $row_artists['Artists_name'];
+        
+        $Artists_desc = $row_artists['Artists_desc'];
+        
+        $get_products ="select * from products where product_id='$Artists_id'";
+        
+        $run_products = mysqli_query($db,$get_products);
+        
+        $count = mysqli_num_rows($run_products);
+        
+        if($count==0){
+            
+            echo "
+            
+                <div class='box'>
+                
+                    <h1> No Product Found In This Product Categories </h1>
+                
+                </div>
+            
+            ";
+            
+        }else{
+            
+            echo "
+            
+                <div class='box'>
+                
+                    <h1> $Artists_name </h1>
+                    
+                    <p> $Artists_desc </p>
                 
                 </div>
             
@@ -222,5 +346,9 @@ function getpcatpro(){
 }
 
 /// finish getpcatpro functions ///
+
+
+
+
 
 ?>

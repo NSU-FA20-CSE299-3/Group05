@@ -1,6 +1,7 @@
 <?php
 include("includes/db.php");
 include("functions/functions.php");
+$active='Cart';
 
 ?>
 
@@ -76,13 +77,13 @@ include("functions/functions.php");
                                           <a href="index.php">Home</a>
                                           
                                     </li>
-                                    <li class="active">
+                                    <li>
                                           <a href="shop.php">Store</a>
                                     </li>
                                     <li>
                                           <a href="checkout.php">My Account</a>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                           <a href="cart.php">Buying Items</a>
                                     </li>
                                     <li>
@@ -139,368 +140,239 @@ include("functions/functions.php");
       </div>
 
 
-      <div id="content">
-            <div class="container"> <!-------------------------------Container start-------------->
-                  <div class="col-md-12">
-                        <ul class="breadcrumb">
-                              <li><a href="home.php">Home</a></li>
-                              <li>Store</li>
-                              
-                        </ul>
-                        
-                  </div>
-                  <div class="col-md-3">
-                        <?php
-                        include("includes/sidebar.php");
-                        ?>
-                        
-                  </div>
 
 
-      <div class="col-md-9">
-            <div class="row" id="productmain">
-                  <div class="col-sm-6">
-                        <div id="mainimage">
-                              <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                          <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                                           <li data-target="#mycarousel" data-slide-to="1" class="active"></li>
-                                            <li data-target="#mycarousel" data-slide-to="2" class="active"></li>
-                                          
-                                    </ol>
-                                    <div class="carousel-inner"> <!--------------Carousel inner start----->
-                                          <div class="item active">
-                                                <center>
-                                    <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
-                                                </center>
-                                                
-                                          </div>
-                                          <div class="item">
-                                                <center>
-                                    <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
-                                                </center>
-                                                
-                                          </div>
-
-                                          <div class="item">
-                                                <center>
-                                    <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
-                                                </center>
-                                                
-                                          </div>
-
-                                          
-
-                                          
-                                    </div> <!--------------Carousel inner close----->
-
-                                    <a href="#mycarousel" class="left carousel-control" data-slide="prev">
-                                          <span class="glyphicon glyphicon-chevron-left">
-                                                
-                                          </span>
-                                          <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a href="#mycarousel" class="right carousel-control" data-slide="next">
-                                          <span class="glyphicon glyphicon-chevron-left">
-                                                
-                                          </span>
-                                          <span class="sr-only">Next</span>
-                                    </a>
-
-                                    
-                              </div>
-                              
-                        </div>
-                        
-                  </div> <!------------------ col-sm-6 slider end------------------>
-                  <div class="col-sm-6">
-                        <div class="box">
-                              <h1 class="text-center"> Almond Blossoms is from a group of several paintings made in 1888 and 1890 by Vincent van Gogh in Arles and Saint-Rémy, southern France of blossoming almond trees.</h1>
-                              <form action="details.php" method="post" class="form-horizontal">
-                                    <div class="form-group">
-                                          <label class="col-md-5 control-label">Product Quantity</label>
-                                          <div class="col-md-7">
-                                                <select name="product_qty" class="form-control">
-                                                      <option>1</option>
-                                                      <option>2</option>
-                                                      <option>3</option>
-                                                      <option>4</option>
-                                                      <option>5</option>
-                                                      
-                                                </select>
-                                                
-                                          </div>
-                                          
-                                    </div>
-
-                                    <div class="form-group">
-                                          <label class="col-md-5 control-label">Choose A Size</label>
-                                          <div class="col-md-7">
-                                                <select name="product_size" class="form-control">
-                                                      <option></option>
-                                                      <option> 13.8 W x 15.7 H x 1.2 D</option>
-                                                      <option>39.4 W x 31.5 H x 0.8 D</option>
-                                                      
-                                                      
-                                                </select>
-                                                
-                                          </div>
-                                          
-                                    </div> 
-                                    <p class="price">BDT 500</p>
-                                    <p class="text-center-buttons">
-                                          <button class="btn btn-primary" type="submit">
-                                                <i class="fa fa-shopping-cart"></i>Add to cart
-                                                
-                                          </button>
-                                    </p>
-
-                                    
-                              </form>
-                              
-                        </div>
-                        <div class="col-xs-4">
-                              <a href="#" class="thumb"></a>
-                              <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
-                              
-                        </div>
-                        <div class="col-xs-4">
-                              <a href="#" class="thumb"></a>
-                              <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
-                              
-                        </div>
-                        <div class="col-xs-4">
-                              <a href="#" class="thumb">
-                              <img src="admin_area/product_images/vangogh.jpg" class="img-responsive">
-                        </a>
-                              
-                        </div>
-
-
+<div id="content"><!-- #content Begin -->
+       <div class="container"><!-- container Begin -->
+           <div class="col-md-12"><!-- col-md-12 Begin -->
+               
+               <ul class="breadcrumb"><!-- breadcrumb Begin -->
+                   <li>
+                       <a href="index.php">Home</a>
+                   </li>
+                   <li>
+                       Store
+                   </li>
+                   
+                   <li>
+                       <a href="store.php?cat=<?php echo $cat_id; ?>"><?php echo $cat_title; ?></a>
+                   </li>
+                   
+               </ul><!-- breadcrumb Finish -->
+               
+           </div><!-- col-md-12 Finish -->
+           
+           <div class="col-md-3"><!-- col-md-3 Begin -->
+   
+   <?php 
+    
+    include("includes/sidebar.php");
+    
+    ?>
+               
+           </div><!-- col-md-3 Finish -->
+           
+           <div class="col-md-9"><!-- col-md-9 Begin -->
+               <div id="productMain" class="row"><!-- row Begin -->
+                   <div class="col-sm-6"><!-- col-sm-6 Begin -->
+                       <div id="mainImage"><!-- #mainImage Begin -->
+                           <div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- carousel slide Begin -->
+                               <ol class="carousel-indicators"><!-- carousel-indicators Begin -->
+                                   <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+                                   <li data-target="#myCarousel" data-slide-to="1"></li>
+                                   <li data-target="#myCarousel" data-slide-to="2"></li>
+                               </ol><!-- carousel-indicators Finish -->
+                               
+                               <div class="carousel-inner">
+                                   <div class="item active">
+                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $product_img1; ?>" alt="Product 3-a"></center>
+                                   </div>
+                                   <div class="item">
+                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $product_img2; ?>" alt="Product 3-b"></center>
+                                   </div>
+                                   <div class="item">
+                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $product_img3; ?>" alt="Product 3-c"></center>
+                                   </div>
+                               </div>
+                               
+                               <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
+                                   <span class="glyphicon glyphicon-chevron-left"></span>
+                                   <span class="sr-only">Previous</span>
+                               </a><!-- left carousel-control Finish -->
+                               
+                               <a href="#myCarousel" class="right carousel-control" data-slide="next"><!-- right carousel-control Begin -->
+                                   <span class="glyphicon glyphicon-chevron-right"></span>
+                                   <span class="sr-only">Previous</span>
+                               </a><!-- right carousel-control Finish -->
+                               
+                           </div><!-- carousel slide Finish -->
+                       </div><!-- mainImage Finish -->
+                   </div><!-- col-sm-6 Finish -->
+                   
+                   <div class="col-sm-6"><!-- col-sm-6 Begin -->
+                       <div class="box"><!-- box Begin -->
+                           <h1 class="text-center"> <?php echo $product_title; ?> </h1>
                            
-                  </div>
-
-                  
-            </div>
-
-            <div class="box" id="details">
-                  <h4>Product Details</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-
-                  <h4>Style</h4>
-                  <ul>
-                        
-
-                       <li>Pop Art</li>
-                       <li>Modern,Pop Art, Modern, Realism </li>
-                       <li>Mediums:Acrylic</li>
-                      <li>Materials:Canvas</li>
+                           <form action="index.php?add_cart=<?php echo $product_id; ?>" class="form-horizontal" method="post"><!-- form-horizontal Begin -->
+                               <div class="form-group"><!-- form-group Begin -->
+                                   <label for="" class="col-md-5 control-label">Products Quantity</label>
+                                   
+                                   <div class="col-md-7"><!-- col-md-7 Begin -->
+                                          <select name="product_qty" id="" class="form-control"><!-- select Begin -->
+                                           <option>1</option>
+                                           <option>2</option>
+                                           <option>3</option>
+                                           <option>4</option>
+                                           <option>5</option>
+                                           </select><!-- select Finish -->
+                                   
+                                    </div><!-- col-md-7 Finish -->
+                                   
+                               </div><!-- form-group Finish -->
+                               
+                               <div class="form-group"><!-- form-group Begin -->
+                                   <label class="col-md-5 control-label">Product Size</label>
+                                   
+                                   <div class="col-md-7"><!-- col-md-7 Begin -->
+                                       
+                                       <select name="product_size" class="form-control"><!-- form-control Begin -->
+                                          
+                                           <option>Select a Size</option>
+                                           <option>Small</option>
+                                           <option>Medium</option>
+                                           <option>Large</option>
+                                           
+                                       </select><!-- form-control Finish -->
+                                       
+                                   </div><!-- col-md-7 Finish -->
+                               </div><!-- form-group Finish -->
+                               
+                               <p class="price">$ <?php echo $product_price; ?></p>
+                               
+                               <p class="text-center buttons"><button class="btn btn-primary i fa fa-shopping-cart"> Add to cart</button></p>
+                               
+                           </form><!-- form-horizontal Finish -->
+                           
+                       </div><!-- box Finish -->
                        
-                  </ul>
-                  
-            </div>
-
-            <div id="row same-height-row">
-                  <div class="col-md-3 col-sm-6">
-                        <div class="box same-height headline">
-                              <h3 class="text-center">Related Art Items</h3>
-                              
-                        </div>
+                       <div class="row" id="thumbs"><!-- row Begin -->
+                           
+                           <div class="col-xs-4"><!-- col-xs-4 Begin -->
+                               <a data-target="#myCarousel" data-slide-to="0"  href="#" class="thumb"><!-- thumb Begin -->
+                                   <img src="admin_area/product_images/<?php echo $product_img1; ?>" alt="product 1" class="img-responsive">
+                               </a><!-- thumb Finish -->
+                           </div><!-- col-xs-4 Finish -->
+                           
+                           <div class="col-xs-4"><!-- col-xs-4 Begin -->
+                               <a data-target="#myCarousel" data-slide-to="1"  href="#" class="thumb"><!-- thumb Begin -->
+                                   <img src="admin_area/product_images/<?php echo $product_img2; ?>" alt="product 2" class="img-responsive">
+                               </a><!-- thumb Finish -->
+                           </div><!-- col-xs-4 Finish -->
+                           
+                           <div class="col-xs-4"><!-- col-xs-4 Begin -->
+                               <a data-target="#myCarousel" data-slide-to="2"  href="#" class="thumb"><!-- thumb Begin -->
+                                   <img src="admin_area/product_images/<?php echo $product_img3; ?>" alt="product 4" class="img-responsive">
+                               </a><!-- thumb Finish -->
+                           </div><!-- col-xs-4 Finish -->
+                           
+                       </div><!-- row Finish -->
+                       
+                   </div><!-- col-sm-6 Finish -->
+                   
+                   
+               </div><!-- row Finish -->
+               
+               <div class="box" id="details"><!-- box Begin -->
+                       
+                       <h4>Product Details</h4>
+                   
+                   <p>
+                       
+                       <?php echo $product_desc; ?>
+                       
+                   </p>
+                   
+                       <h4>Size</h4>
+                       
+                       <ul>
+                           <li>Small</li>
+                           <li>Medium</li>
+                           <li>Large</li>
+                       </ul>  
+                       
+                       <hr>
+                   
+               </div><!-- box Finish -->
+               
+               <div id="row same-heigh-row"><!-- #row same-heigh-row Begin -->
+                   <div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Begin -->
+                       <div class="box same-height headline"><!-- box same-height headline Begin -->
+                           <h3 class="text-center">Products You Maybe Like</h3>
+                       </div><!-- box same-height headline Finish -->
+                   </div><!-- col-md-3 col-sm-6 Finish -->
+                   
+                   <?php 
+                   
+                    $get_products = "select * from products order by 1 DESC LIMIT 0,3";
+                   
+                    $run_products = mysqli_query($con,$get_products);
+                   
+                   while($row_products=mysqli_fetch_array($run_products)){
+                       
+                       $product_id = $row_products['product_id'];
+                       
+                       $product_title = $row_products['product_title'];
+                       
+                       $product_img1 = $row_products['product_img1'];
+                       
+                       $product_price = $row_products['product_price'];
+                       
+                       echo "
+                       
+                        <div class='col-md-3 col-sm-6 center-responsive'>
                         
-                  </div>
-                  <div class="center-responsive col-md-3">
-                        <div class="product same-height">
-                              <a href="">
-                                    <img src="admin_area/product_images/starrynight.png" class="img-responsive">
-                              </a>
-                              <div class="text">
-                                    <h3><a href="details.php">Van Gogh</a></h3>
-                                    <p class="price">BDT 500</p>
+                            <div class='product same-height'>
+                            
+                                <a href='details.php?pro_id=$product_id'>
+                                
+                                    <img class='img-responsive' src='admin_area/product_images/$product_img1'>
+                                
+                                </a>
+                                
+                                <div class='text'>
+                                
+                                    <h3> <a href='details.php?pro_id=$product_id'> $product_title </a> </h3>
                                     
-                              </div>
-                        </div>
-                  </div>
-                  
-            </div>
-             <div class="center-responsive col-md-3">
-                        <div class="product same-height">
-                              <a href="">
-                                    <img src="admin_area/product_images/Prisoners-Exercising1.jpg" class="img-responsive">
-                              </a>
-                              <div class="text">
-                                    <h3><a href="details.php">Prisoners Exercising</a></h3>
-                                    <p class="price">BDT 500</p>
-                                    
-                              </div>
-                        </div>
-                  </div>
-                   <div class="center-responsive col-md-3">
-                        <div class="product same-height">
-                              <a href="">
-                                    <img src="admin_area/product_images/nightcafe1.jpg" class="img-responsive">
-                              </a>
-                              <div class="text">
-                                    <h3><a href="details.php">night cafe</a></h3>
-                                    <p class="price">BDT 500</p>
-                                    
-                              </div>
-                        </div>
-                  </div>
-                  
-            </div>
-            
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  </div>
-      </div><!----------------------------Content end--------------------->
-
-
-
-                  
-             <!-----------------Container End---------------->
-            
-      
-
-
-
-      <!-----------------------------Footer------------------->
-      <div id="footer">
-      <div class="container">
-      <div class="row">
-            <div class="col-md-3 col-sm-6">
-                  <h4>Pages</h4>
-                  <ul>
-                        <li><a href="cart.php">Shopping Cart</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
-                        <li><a href="shop.php">Shop</a></li>
-                        <li><a href="checkout.php">My Account</a></li>
-                  </ul>
-                  <hr>
-                  <h4>User section</h4>
-
-                  <ul>
-                        <li><a href="checkout.php">Login</a></li>
-                        <li><a href="customer_registration.php">Register</a></li>
-                  </ul>
-                      <hr class="hidden-md hidden-lg hidden-sm">
-                      
-            </div>
-            <div class="col-md-3 col-sm-6">
-                  <h4>Top Product Categories</h4>
-                  <ul>
-                        <li><a href="#">Bengali Arts & Crafts</a></li>
-                        <li><a href="#">Ancient Europe</a></li>
-                        <li><a href="#">Modern</a></li>
-                        <li><a href="#">Post Modern</a></li>
-                        <li><a href="#">Digital Arts</a></li>
-                  </ul>
-                  <hr class="hidden-md hidden-lg">
-                  
-            </div>
-            <div class="col-md-3 col-sm-6">
-                  <h4>Where to find us</h4>
-                  <p>
-                        <strong>North South University </strong>
-                        <br>Bashundhara
-                        <br> Dhaka
-                        <br>Bangladesh
-                        <br> mahbubhasam@gmail.com
-                        <br> 0171******
-                  </p>
-                  <a href="contact.php">Go to contact us page</a>
-                  <hr class="hidden-md hidden-lg">
-            </div>
-            <div class="col-md-3 col-sm-6">
-                  <h4>Get the news</h4>
-                  <p class="text-muted">
-                        Subscribe here for getting news of Arts & Crafts
+                                    <p class='price'> $ $product_price </p>
+                                
+                                </div>
+                            
+                            </div>
                         
-                  </p>
-                  <form action="" method="post">
-                        <div class="input-group">
-                              <input type="text" name="email" class="form-control">
-                              <span class="input-group-btn">
-                                    <input type="submit" class="btn btn-default" value="subscribe">
-                                    
-                              </span>
-                              
                         </div>
-                        
-                  </form>
-                  <hr>
-                  <h4>Stay In Touch</h4>
-                  <p class="social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                        <a href="#"><i class="fa fa-envelope"></i></a>
-                  </p>
-                  
-            </div>
-            
-      </div>
-      </div>
-      
-</div>
-<div id="copyright">
-<div class="copyright"> <!---------- copyright section start------->
-
-      <div class="container">
-            <div class="col-md-6">
-                  <p class="pull-left">
-                        &copy; 2021 Mahbub Hasan Prantik
-                        </p>
-                  
-            </div>
-            <div class="col-md-6">
-                  <p class="pull-right">
-                        Tamplate By: <a href="mahbubhasan2033@gmail0.com">"mahbubhasan2033@gmail.com"</a></p>
-                  
-            </div>
-            
-      </div>
-</div>
-</div>
-
-
-
-
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-             
-
-
-
-
-
-
-
-
+                       
+                       ";
+                       
+                   }
+                   
+                   ?>
+                   
+               </div><!-- #row same-heigh-row Finish -->
+               
+           </div><!-- col-md-9 Finish -->
+           
+       </div><!-- container Finish -->
+   </div><!-- #content Finish -->
+   
+   <?php 
+    
+    include("includes/footer.php");
+    
+    ?>
+    
+    <script src="js/jquery-331.min.js"></script>
+    <script src="js/bootstrap-337.min.js"></script>
+    
+    
 </body>
-</html>
-
+</html

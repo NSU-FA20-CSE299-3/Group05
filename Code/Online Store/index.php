@@ -4,6 +4,46 @@ include("functions/functions.php");
 
 ?>
 
+<?php 
+
+if(isset($_GET['product_id'])){
+    
+    $product_id = $_GET['product_id'];
+    
+    $get_product = "select * from products where product_id='$product_id'";
+    
+    $run_product = mysqli_query($con,$get_product);
+    
+    $row_product = mysqli_fetch_array($run_product);
+    
+    $product_id = $row_product['product_id'];
+    
+    $product_title = $row_product['product_title'];
+    
+    $product_price = $row_product['product_price'];
+    
+    $product_desc = $row_product['product_desc'];
+    
+    $product_img1 = $row_product['product_img1'];
+    
+    $product_img2 = $row_product['product_img2'];
+    
+    $product_img3 = $row_product['product_img3'];
+    
+    $get_product = "select * from products where product_title='$product_title'";
+    
+    $run_product = mysqli_query($con,$get_product);
+    
+    $row_product = mysqli_fetch_array($run_product);
+    
+    $peoduct_title = $row_product['product_title'];
+    
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>

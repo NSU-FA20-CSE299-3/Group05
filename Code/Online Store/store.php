@@ -337,7 +337,7 @@ include("functions/functions.php");
                </center>
                  <?php
                   getpcatpro();
-                 getcatpro()
+                 getcatpro();
                   ?> 
 
                 

@@ -190,9 +190,9 @@ if(isset($_GET['pro_id'])){
                    </li>
                    
                    <li>
-                       <a href="store.php? product_categories=<?php echo $p_cat_id; ?>"><?php echo $p_cat_title; ?></a>
+                       <a href="store.php?product_categories=<?php echo $p_cat_id; ?>"><?php echo $p_cat_title; ?></a>
                    </li>
-                   <li><?php echo $pro_title;?></li>
+                   <li><?php echo $p_cat_title;?></li>
                    
                </ul><!-- breadcrumb Finish -->
                
@@ -247,7 +247,7 @@ if(isset($_GET['pro_id'])){
                    
                    <div class="col-sm-6"><!-- col-sm-6 Begin -->
                        <div class="box"><!-- box Begin -->
-                           <h1 class="text-center"> <?php echo $product_id; ?> </h1>
+                           <h1 class="text-center"> <?php echo $p_cat_id; ?> </h1>
                            <?php
 
                             addCart();
@@ -269,13 +269,12 @@ if(isset($_GET['pro_id'])){
                                    
                                     </div><!-- col-md-7 Finish -->
                                    
-                               </div><!-- form-group Finish -->
+                               </div>
                                
                                <div class="form-group"><!-- form-group Begin -->
                                    <label class="col-md-5 control-label">Product Size</label>
                                    
-                                   <div class="col-md-7"><!-- col-md-7 Begin -->
-                                       
+                                   <div class="col-md-7">
                                        <select name="product_size" class="form-control"><!-- form-control Begin -->
                                           
                                            <option>Select a Size</option>
@@ -283,36 +282,36 @@ if(isset($_GET['pro_id'])){
                                            <option>Medium</option>
                                            <option>Large</option>
                                            
-                                       </select><!-- form-control Finish -->
+                                       </select>
                                        
-                                   </div><!-- col-md-7 Finish -->
-                               </div><!-- form-group Finish -->
+                                   </div>
+                               </div>
                                
-                               <p class="price">$ <?php echo $product_price; ?></p>
+                               <p class="price">$500<?php echo $pro_price; ?></p>
                                
                                <p class="text-center buttons"><button class="btn btn-primary i fa fa-shopping-cart"> Add to cart</button></p>
                                
-                           </form><!-- form-horizontal Finish -->
+                           </form>
                            
-                       </div><!-- box Finish -->
+                       </div>
                        
-                       <div class="row" id="thumbs"><!-- row Begin -->
+                       <div class="row" id="thumbs">
                            
-                           <div class="col-xs-4"><!-- col-xs-4 Begin -->
+                           <div class="col-xs-4">
                                <a data-target="#myCarousel" data-slide-to="0"  href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/<?php echo $product_img1; ?>" alt="product 1" class="img-responsive">
+                                   <img src="admin_area/product_images/<?php echo $pro_img1; ?>" alt="product 1" class="img-responsive">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
                            
                            <div class="col-xs-4"><!-- col-xs-4 Begin -->
                                <a data-target="#myCarousel" data-slide-to="1"  href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/<?php echo $product_img2; ?>" alt="product 2" class="img-responsive">
+                                   <img src="admin_area/product_images/<?php echo $pro_img2; ?>" alt="product 2" class="img-responsive">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
                            
                            <div class="col-xs-4"><!-- col-xs-4 Begin -->
                                <a data-target="#myCarousel" data-slide-to="2"  href="#" class="thumb"><!-- thumb Begin -->
-                                   <img src="admin_area/product_images/<?php echo $product_img3; ?>" alt="product 4" class="img-responsive">
+                                   <img src="admin_area/product_images/<?php echo $pro_img3; ?>" alt="product 4" class="img-responsive">
                                </a><!-- thumb Finish -->
                            </div><!-- col-xs-4 Finish -->
                            

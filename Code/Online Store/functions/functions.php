@@ -263,11 +263,11 @@ function getpcatpro(){
     
     global $db;
     
-    if(isset($_GET['product_catagory'])){
+    if(isset($_GET['product_categories'])){
         
         $p_cat_id = $_GET[' product_categories'];
         
-        $get_product_categories ="select * from product_categories where Artists_id='$Artists_id'";
+        $get_product_categories ="select * from product_categories where p_cat_id='$p_cat_id'";
         
         $run_product_categories = mysqli_query($db,$get_product_categories);
         
@@ -275,7 +275,7 @@ function getpcatpro(){
         
         $p_cat_title = $row_product_categories['p_cat_title'];
         
-        $p_cat_desc = $row_artists['p_cat_desc'];
+        $p_cat_desc = $row_product_categories['p_cat_desc'];
         
         $get_products ="select * from products where product_id='$p_cat_id'";
         

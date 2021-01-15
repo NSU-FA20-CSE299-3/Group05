@@ -170,7 +170,7 @@ include("functions/functions.php");
                
                 if(!isset($_GET['cat'])){
                     
-                    if(!isset($_GET['artists'])){
+                    if(!isset($_GET['producat_catagory'])){
               
                       echo "
 
@@ -195,7 +195,7 @@ include("functions/functions.php");
                    
                         if(!isset($_GET['cat'])){
                             
-                         if(!isset($_GET['artists'])){
+                         if(!isset($_GET['producat_catagory'])){
                             
                             $per_page=6; 
                              

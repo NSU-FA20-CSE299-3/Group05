@@ -1,5 +1,39 @@
 <?php
 $db=mysqli_connect("localhost","root","","online store");
+//for getting ip address
+function getUserIp(){
+	switch(true){
+		case(!empty($_SERVER['HTTP_X_REAL_IP'])):return $_SERVER['HTTP_X_REAL_IP'];
+		case(!empty($_SERVER['HTTP_CLIENT_IP'])):return $_SERVER['HTTP_CLIENT_IP'];
+		case(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) :return $_SERVER['HTTP_X_FORWARDED_FOR'];
+		default: return $_SERVER['REMOTE_ADDER'];
+	}
+}
+
+
+function addCart(){
+	global $db;
+	if(isset($GET['add_cart'])){
+		$ip_add=getUserIp();
+		$ip_id=$GET['add_cart'];
+		$product_qty=$_POST['product_qty'];
+		$product_size=$_POST['product_size'];
+		$check_product="select * from cart where ip_add='$ip_add' AND p_id='p_id'";
+		$run_check=mysqli_query($db, $check_product);
+		if(mysqli_num_rows($run_check)>0){
+			echo"<script>alert('This product is already add in cart')</script>";
+			echo"<script>window.open(details.php?product_id=$p_id','_self')</script>";
+
+		}else{
+			$query="insert into cart(p_id,ip_add,qty,size) values('$p_id','$ip_add','$product_qty','$product_size'";
+			$run_query="mysqli_query($db,$query)";
+			echo"<script>window.open('details.php?product_id=$p_id','_self')</script>";
+		}
+	}
+}
+
+
+
 function getPro(){
 	global $db;
 	$get_product="select * from products order by 1 DESC LIMIT 0,6";
@@ -227,11 +261,11 @@ function getcatpro(){
     
     global $db;
     
-    if(isset($_GET['artists'])){
+    if(isset($_GET['product_catagory'])){
         
         $Artists_id = $_GET['artists'];
         
-        $get_artists ="select * from artists where Artists_id='$Artists_id'";
+        $get_artists ="select * from product_catagory where Artists_id='$Artists_id'";
         
         $run_artists = mysqli_query($db,$get_artists);
         

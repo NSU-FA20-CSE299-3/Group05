@@ -268,7 +268,7 @@ if(isset($_POST['register'])){
     
     $c_email = $_POST['c_email'];
     
-    $c_pass = $_POST['c_pass'];
+    $c_password = $_POST['c_password'];
     
     $c_country = $_POST['c_country'];
     
@@ -282,15 +282,15 @@ if(isset($_POST['register'])){
     
     $c_image_tmp = $_FILES['c_image']['tmp_name'];
     
-    $c_ip = getRealIpUser();
+    $c_ip =  getUserIp();
     
     move_uploaded_file($c_image_tmp,"customer/customer_images/$c_image");
     
-    $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_city,customer_contact,customer_address,customer_image,customer_ip) values ('$c_name','$c_email','$c_pass','$c_country','$c_city','$c_contact','$c_address','$c_image','$c_ip')";
+    $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_city,customer_contact,customer_address,customer_image,customer_ip) values ('$c_name','$c_email','$c_password','$c_country','$c_city','$c_contact','$c_address','$c_image','$c_ip')";
     
     $run_customer = mysqli_query($con,$insert_customer);
     
-    $sel_cart = "select * from cart where ip_add='$c_ip'";
+    $sel_cart = "select * from caustomer where ip_add='$cart_ip'";
     
     $run_cart = mysqli_query($con,$sel_cart);
     

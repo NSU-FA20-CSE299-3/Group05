@@ -19,7 +19,7 @@
 
 <div class="panel panel-default sidebar-menu">
 	<div class="panel-heading">
-		<h3 class="panel-title">Artists</h3>
+		<h3 class="panel-title">Product Catagories</h3>
 		
 	</div>
 	<div class="panel-body">

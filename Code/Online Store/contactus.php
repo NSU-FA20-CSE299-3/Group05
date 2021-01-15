@@ -97,7 +97,7 @@ include("functions/functions.php");
                                     
                                     
                               </ul>
-                               
+
                               
                   
 
@@ -181,7 +181,7 @@ include("functions/functions.php");
                                     </div>
                                     <div class="form-group">
                                           <label>Subject</label>
-                                          <input type="text" name="submit" class="form-control" required="">
+                                          <input type="text" name="subject" class="form-control" required="">
                                           
                                     </div>
                                     <div class="form-group">
@@ -277,4 +277,4 @@ include("functions/functions.php");
 
 </body>
 </html>
-      
+     

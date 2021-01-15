@@ -1,7 +1,42 @@
 <?php
 include("includes/db.php");
 include("functions/functions.php");
-$active='Cart';
+?>
+<?php 
+
+if(isset($_GET['product_id'])){
+    
+    $product_id = $_GET['product_id'];
+    
+    $get_product = "select * from products where product_id='$product_id'";
+    
+    $run_product = mysqli_query($con,$get_product);
+    
+    $row_product = mysqli_fetch_array($run_product);
+    
+    $product_id = $row_product['product_id'];
+    
+    $product_title = $row_product['product_title'];
+    
+    $product_price = $row_product['product_price'];
+    
+    $product_desc = $row_product['product_desc'];
+    
+    $product_img1 = $row_product['product_img1'];
+    
+    $product_img2 = $row_product['product_img2'];
+    
+    $product_img3 = $row_product['product_img3'];
+    
+    $get_categories = "select * from categories where cat_id='$cat_id'";
+    
+    $run_categories = mysqli_query($con,$get_categories);
+    
+    $row_categories = mysqli_fetch_array($run_categories);
+    
+    $cat_id = $row_categories['cat_id'];
+    $cat_title=$row_categories['cat_title'];
+}
 
 ?>
 
@@ -155,7 +190,7 @@ $active='Cart';
                    </li>
                    
                    <li>
-                       <a href="store.php?cat=<?php echo $cat_id; ?>"><?php echo $cat_title; ?></a>
+                       <a href="store.php?categories=<?php echo $cat_id; ?>"><?php echo $cat_title; ?></a>
                    </li>
                    
                </ul><!-- breadcrumb Finish -->
@@ -211,9 +246,14 @@ $active='Cart';
                    
                    <div class="col-sm-6"><!-- col-sm-6 Begin -->
                        <div class="box"><!-- box Begin -->
-                           <h1 class="text-center"> <?php echo $product_title; ?> </h1>
+                           <h1 class="text-center"> <?php echo $product_id; ?> </h1>
+                           <?php
+
+                            addCart();
+
+                           ?>
                            
-                           <form action="index.php?add_cart=<?php echo $product_id; ?>" class="form-horizontal" method="post"><!-- form-horizontal Begin -->
+                           <form action="details.php?add_cart=<?php echo $product_id; ?>" class="form-horizontal" method="post"><!-- form-horizontal Begin -->
                                <div class="form-group"><!-- form-group Begin -->
                                    <label for="" class="col-md-5 control-label">Products Quantity</label>
                                    
@@ -280,29 +320,7 @@ $active='Cart';
                    </div><!-- col-sm-6 Finish -->
                    
                    
-               </div><!-- row Finish -->
                
-               <div class="box" id="details"><!-- box Begin -->
-                       
-                       <h4>Product Details</h4>
-                   
-                   <p>
-                       
-                       <?php echo $product_desc; ?>
-                       
-                   </p>
-                   
-                       <h4>Size</h4>
-                       
-                       <ul>
-                           <li>Small</li>
-                           <li>Medium</li>
-                           <li>Large</li>
-                       </ul>  
-                       
-                       <hr>
-                   
-               </div><!-- box Finish -->
                
                <div id="row same-heigh-row"><!-- #row same-heigh-row Begin -->
                    <div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Begin -->
@@ -313,7 +331,7 @@ $active='Cart';
                    
                    <?php 
                    
-                    $get_products = "select * from products order by 1 DESC LIMIT 0,3";
+                    $get_products = "select * from products order by 1  LIMIT 0,3";
                    
                     $run_products = mysqli_query($con,$get_products);
                    

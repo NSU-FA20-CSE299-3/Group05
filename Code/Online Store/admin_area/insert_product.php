@@ -61,18 +61,18 @@ include("includes/db.php");
 
                 		<div class="form-group">
                 			<label class="col-md-3 control-label">
-                				Artists
+                				Product category
                 			</label>
-                			<select name="artists" class="form-control">
-                				<option> Select an artist</option>
+                			<select name="product_cat" class="form-control">
+                				<option> Select a product category</option>
 
                 				<?php
-                                 $get_artists="select * from artists";
-                                 $run_artists=mysqli_query($con,$get_artists);
-                                 while($row=mysqli_fetch_array($run_artists)){
-                                 	$id=$row['Artists_id'];
-                                 	$artists_name=$row['Artists_name'];
-                                 	echo "<option value='id' >$artists_name </option>";
+                                 $get_p_cats="select * from product_catagory";
+                                 $run_p_cats=mysqli_query($con,$get_p_cats);
+                                 while($row=mysqli_fetch_array($run_p_cats)){
+                                 	$id=$row['P_cat_id'];
+                                 	$cat_title=$row['p_cat_title'];
+                                 	echo "<option value='$id >$cat_title' </option>";
                                  }
                 				?>
                 			</select>
@@ -166,7 +166,7 @@ include("includes/db.php");
 <?php
 if(isset($_POST['submit'])){
 	$product_title=$_POST['product_title'];
-	$artists=$_POST['artists'];
+	$artists=$_POST['product_catagory'];
 	$cat=$_POST['cat'];
 	$product_img1=$_FILES['product_img1']['name'];
 	$product_img2=$_FILES['product_img2']['name'];
@@ -184,7 +184,7 @@ if(isset($_POST['submit'])){
 	move_uploaded_file($temp_name3, "product_images/check/$product_img3");
 
 
-	$insert_product="insert into products(p_cat_id, cat_id, date, product_title, product_img1, product_img2, product_img3, product_price, product_desc, product_keyword) values('$artists','$cat',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_price','$product_desc', '$product_keyword')";
+	$insert_product="insert into products(p_cat_id, cat_id, date, product_title, product_img1, product_img2, product_img3, product_price, product_desc, product_keyword) values('$product_catagory','$product_cat',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_price','$product_desc', '$product_keyword')";
 
 	$run_product=mysqli_query($con, $insert_product);
 	if($run_product){

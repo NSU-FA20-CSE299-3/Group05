@@ -1,5 +1,7 @@
 <?php
 $db=mysqli_connect("localhost","root","","online store");
+
+
 //for getting ip address
 function getUserIp(){
 	switch(true){
@@ -133,7 +135,7 @@ function getCats(){
 
 /// begin getpcatpro functions ///
 
-function getpcatpro(){
+function getcatpro(){
     
     global $db;
     
@@ -151,7 +153,7 @@ function getpcatpro(){
         
         $cat_desc = $row_cat['cat_desc'];
         
-        $get_products ="select * from products where product_id='$cat_id'";
+        $get_products ="select * from products where product_id='$cat_id' LIMIT 0,6";
         
         $run_products = mysqli_query($db,$get_products);
         
@@ -257,25 +259,25 @@ function getpcatpro(){
 
 /// finish getpcatpro functions ///
 
-function getcatpro(){
+function getpcatpro(){
     
     global $db;
     
     if(isset($_GET['product_catagory'])){
         
-        $Artists_id = $_GET['artists'];
+        $p_cat_id = $_GET[' product_categories'];
         
-        $get_artists ="select * from product_catagory where Artists_id='$Artists_id'";
+        $get_product_categories ="select * from product_categories where Artists_id='$Artists_id'";
         
-        $run_artists = mysqli_query($db,$get_artists);
+        $run_product_categories = mysqli_query($db,$get_product_categories);
         
-        $row_artists = mysqli_fetch_array($run_artists);
+        $row_product_categories = mysqli_fetch_array($run_product_categories);
         
-        $Artists_name = $row_artists['Artists_name'];
+        $p_cat_title = $row_product_categories['p_cat_title'];
         
-        $Artists_desc = $row_artists['Artists_desc'];
+        $p_cat_desc = $row_artists['p_cat_desc'];
         
-        $get_products ="select * from products where product_id='$Artists_id'";
+        $get_products ="select * from products where product_id='$p_cat_id'";
         
         $run_products = mysqli_query($db,$get_products);
         
@@ -299,9 +301,9 @@ function getcatpro(){
             
                 <div class='box'>
                 
-                    <h1> $Artists_name </h1>
+                    <h1> $p_cat_title </h1>
                     
-                    <p> $Artists_desc </p>
+                    <p> $p_cat_desc </p>
                 
                 </div>
             

@@ -4,9 +4,9 @@ include("functions/functions.php");
 ?>
 <?php 
 
-if(isset($_GET['product_id'])){
+if(isset($_GET['pro_id'])){
     
-    $product_id = $_GET['product_id'];
+    $product_id = $_GET['pro_id'];
     
     $get_product = "select * from products where product_id='$product_id'";
     
@@ -14,28 +14,28 @@ if(isset($_GET['product_id'])){
     
     $row_product = mysqli_fetch_array($run_product);
     
-    $product_id = $row_product['product_id'];
+    $p_cat_id = $row_product['p_cat_id'];
     
-    $product_title = $row_product['product_title'];
+    $pro_title = $row_product['product_title'];
     
-    $product_price = $row_product['product_price'];
+    $pro_price = $row_product['product_price'];
     
-    $product_desc = $row_product['product_desc'];
+    $pro_desc = $row_product['product_desc'];
     
-    $product_img1 = $row_product['product_img1'];
+    $pro_img1 = $row_product['product_img1'];
     
-    $product_img2 = $row_product['product_img2'];
+    $pro_img2 = $row_product['product_img2'];
     
-    $product_img3 = $row_product['product_img3'];
+    $pro_img3 = $row_product['product_img3'];
     
-    $get_categories = "select * from categories where cat_id='$cat_id'";
+    $get_p_cat = "select * from product_categories where p_cat_id='$p_cat_id'";
     
-    $run_categories = mysqli_query($con,$get_categories);
+    $run_p_cat = mysqli_query($con,$get_p_cat);
     
-    $row_categories = mysqli_fetch_array($run_categories);
+    $row_p_cat = mysqli_fetch_array($run_p_cat);
     
-    $cat_id = $row_categories['cat_id'];
-    $cat_title=$row_categories['cat_title'];
+    $p_cat_title = $row_p_cat['p_cat_title'];
+    
 }
 
 ?>
@@ -190,8 +190,9 @@ if(isset($_GET['product_id'])){
                    </li>
                    
                    <li>
-                       <a href="store.php?categories=<?php echo $cat_id; ?>"><?php echo $cat_title; ?></a>
+                       <a href="store.php? product_categories=<?php echo $p_cat_id; ?>"><?php echo $p_cat_title; ?></a>
                    </li>
+                   <li><?php echo $pro_title;?></li>
                    
                </ul><!-- breadcrumb Finish -->
                
@@ -220,13 +221,13 @@ if(isset($_GET['product_id'])){
                                
                                <div class="carousel-inner">
                                    <div class="item active">
-                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $product_img1; ?>" alt="Product 3-a"></center>
+                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $pro_img1; ?>" alt="Product 3-a"></center>
                                    </div>
                                    <div class="item">
-                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $product_img2; ?>" alt="Product 3-b"></center>
+                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $pro_img2; ?>" alt="Product 3-b"></center>
                                    </div>
                                    <div class="item">
-                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $product_img3; ?>" alt="Product 3-c"></center>
+                                       <center><img class="img-responsive" src="admin_area/product_images/<?php echo $pro_img3; ?>" alt="Product 3-c"></center>
                                    </div>
                                </div>
                                

@@ -155,7 +155,20 @@ $active='Cart';
                         <div class="box">
                               <form action="cart.php" method="post" enctype="multipart-form-data">
                                     <h1>Buying Items</h1>
-                                    <p class="text-muted">Currently you have no item(s) in your cart</p>
+
+                                    <?php
+
+                                    $ip_add=getUserIP();
+                                    $select_cart="select * from cart where ip_add='$ip_add'";
+                                    $run_cart=mysqli_query($con, $select_cart);
+                                    $count=mysqli_num_rows($run_cart);
+
+
+                                    ?>
+
+
+
+                                    <p class="text-muted">Currently you have<?php echo $count   ?> item(s) in your cart</p>
                                     <div class="table-responsive">
                                           <table class="table">
                                                 <thead>

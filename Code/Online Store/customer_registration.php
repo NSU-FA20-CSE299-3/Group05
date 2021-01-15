@@ -168,7 +168,7 @@ include("functions/functions.php");
                                     </center>
                                     
                               </div>
-                              <form action="customer_registration" method="post" enctype="multipart/form-data">
+                              <form action="customer_registration.php" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                           <label>Customer Name</label>
                                           <input type="text" name="name" required="" class="form-control">
@@ -262,7 +262,7 @@ include("functions/functions.php");
 </html>
 <?php 
 
-if(isset($_POST['register'])){
+if(isset($_POST['submit'])){
     
     $c_name = $_POST['c_name'];
     
@@ -290,7 +290,7 @@ if(isset($_POST['register'])){
     
     $run_customer = mysqli_query($con,$insert_customer);
     
-    $sel_cart = "select * from caustomer where ip_add='$cart_ip'";
+    $sel_cart = "select * from cart where ip_add='$cart_ip'";
     
     $run_cart = mysqli_query($con,$sel_cart);
     
@@ -316,7 +316,7 @@ if(isset($_POST['register'])){
         
         echo "<script>window.open('index.php','_self')</script>";
         
-    }
+    }  
     
 }
 

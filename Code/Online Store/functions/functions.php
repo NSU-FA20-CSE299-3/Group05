@@ -44,12 +44,12 @@ function getPro(){
 		$pro_id=$row_product['product_id'];
 		$product_title=$row_product['product_title'];
 		$pro_price=$row_product['product_price'];
-		$pro_img1=$row_product['product_img1'];
+		$pro_img2=$row_product['product_img2'];
 
 		echo"<div class='col-md-4 col-sm-6'>
 		<div class='product'>
 		<a href='details.php?pro_id=$pro_id'>
-		<img src='admin_area/product_images/$pro_img1' class='img-responsive'>
+		<img src='admin_area/product_images/$pro_img2' class='img-responsive'>
 
 		</a>
 		<div class='text'>
@@ -189,13 +189,13 @@ function getcatpro(){
         
         while($row_products=mysqli_fetch_array($run_products)){
             
-            $product_id = $row_products['product_id'];
+            $pro_id = $row_products['product_id'];
         
-            $product_title = $row_products['product_title'];
+            $pro_title = $row_products['product_title'];
 
-            $product_price = $row_products['product_price'];
+            $pro_price = $row_products['product_price'];
 
-            $product_img1 = $row_products['product_img1'];
+            $pro_img1 = $row_products['product_img1'];
             
             echo "
             
@@ -203,9 +203,9 @@ function getcatpro(){
         
             <div class='product'>
             
-                <a href='details.php?pro_id=$product_id'>  
+                <a href='details.php?pro_id=$pro_id'>  
                 
-                    <img class='img-responsive' src='admin_area/product_images/$product_img1'>
+                    <img class='img-responsive' src='admin_area/product_images/$pro_img1'>
                 
                 </a>
                 
@@ -213,9 +213,9 @@ function getcatpro(){
                 
                     <h3>
             
-                        <a href='details.php?product_id=$product_id'>
+                        <a href='details.php?product_id=$pro_id'>
 
-                            $product_title
+                            $pro_title
 
                         </a>
                     
@@ -223,19 +223,19 @@ function getcatpro(){
                     
                     <p class='price'>
                     
-                        $ $product_price
+                        $ $pro_price
                     
                     </p>
                     
                     <p class='button'>
                     
-                        <a class='btn btn-default' href='details.php?product_id=$product_id'>
+                        <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
 
                             View Details
 
                         </a>
                     
-                        <a class='btn btn-primary' href='details.php?product_id=$product_id'>
+                        <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
                             <i class='fa fa-shopping-cart'></i> Add to Cart
 
@@ -277,7 +277,7 @@ function getpcatpro(){
         
         $p_cat_desc = $row_product_categories['p_cat_desc'];
         
-        $get_products ="select * from products where product_id='$p_cat_id'";
+        $get_products ="select * from products where p_cat_id='$p_cat_id'";
         
         $run_products = mysqli_query($db,$get_products);
         
@@ -313,13 +313,13 @@ function getpcatpro(){
         
         while($row_products=mysqli_fetch_array($run_products)){
             
-            $product_id = $row_products['product_id'];
+            $pro_id = $row_products['product_id'];
         
-            $product_title = $row_products['product_title'];
+            $pro_title = $row_products['product_title'];
 
-            $product_price = $row_products['product_price'];
+            $pro_price = $row_products['product_price'];
 
-            $product_img1 = $row_products['product_img1'];
+            $pro_img1 = $row_products['product_img1'];
             
             echo "
             
@@ -327,9 +327,9 @@ function getpcatpro(){
         
             <div class='product'>
             
-                <a href='details.php?pro_id=$product_id'>
+                <a href='details.php?pro_id=$pro_id'>
                 
-                    <img class='img-responsive' src='admin_area/product_images/$product_img1'>
+                    <img class='img-responsive' src='admin_area/product_images/$pro_img1'>
                 
                 </a>
                 
@@ -337,9 +337,9 @@ function getpcatpro(){
                 
                     <h3>
             
-                        <a href='details.php?product_id=$product_id'>
+                        <a href='details.php?product_id=$pro_id'>
 
-                            $product_title
+                            $pro_title
 
                         </a>
                     
@@ -347,19 +347,19 @@ function getpcatpro(){
                     
                     <p class='price'>
                     
-                        $ $product_price
+                        $ $pro_price
                     
                     </p>
                     
                     <p class='button'>
                     
-                        <a class='btn btn-default' href='details.php?product_id=$product_id'>
+                        <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
 
                             View Details
 
                         </a>
                     
-                        <a class='btn btn-primary' href='details.php?product_id=$product_id'>
+                        <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
 
                             <i class='fa fa-shopping-cart'></i> Add to Cart
 

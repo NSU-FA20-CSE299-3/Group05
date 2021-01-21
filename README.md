@@ -101,16 +101,12 @@ This project has the following features -
     * Users can see all the pages of my website such as home page, store, details, contact us, registration.<br>
     * As an  admin I can upload an upload  product images from insert product page<br>
     * Users will also be able to see posts of the specific categories and artists</p> <br><br><br>
-
-  <p align="center">
-  <img width="700" height="420" src="images/piazzaPost.png"><br>
-  Figure 3.0
-</p>  
-<h3>2.3 Admin Panel:</h3>
+ 
+<h3> Admin Panel:</h3>
 I’m still working on admin panel from where Admins can delete unwanted users or any sort of products. Assign new admins with filtered permission and monitor activities.
 <p align="center">
-<img width="700" height="420" src="images/admin.png"><br>
-Figure 4.0
+<img width="700" height="420" src="Documentation/images/admin.png"><br>
+Figure 7.0
 </p>
 
  <h2 id="#technology">3. Technology</h2>

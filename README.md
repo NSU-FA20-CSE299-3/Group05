@@ -43,21 +43,55 @@ An online art store is new concept of selling and purchasing art works, both dig
  
 <h2 id="features">2. Software Specification</h2>
 This project has the following features -
-<h3>2.1 User Registration:</h3>
+<h3>2.1 Home Page:</h3>
+  To access in my platform  users first have to visit this page. Then anyone can go to their desire pages. 
+   <br>
+ <p align="center">
+   <img width="700" height="420" src="Documentation/images/home.png"><br>
+   Figure 1.0
+ </p>
+<h3>2.2 User Registration:</h3>
   To access in my platform  users first have to register. Users must include username, firstname, lastname, email and password etc. The username will be used as a primary key to identify unique users. And so username will have to be unique. And it must contain 150 characters or fewer characters. Letters, digits and @/./+/-/_ are permitted only.
    <br>
    <br>
  <p align="center">
-   <img width="700" height="420" src="images/registration.png"><br>
+   <img width="700" height="420" src="Documentation/images/register.png"><br>
    Figure 1.0
  </p>
- <h3>2.2 Login to a specific platform :</h3>
-  The main feature of ‘Online Art Store’ is that users will be able to view different platforms on one window after logging in once. This section is know as the profile. The users information is shown on the left as seen in figure 2.0.<br>
+ <h3>2.3 My Account platform :</h3>
+  The main feature of ‘Online Art Store’ is that users will be able to view different platforms on one window after logging in the my account once. This section is know as the profile. The users information is shown on the left.<br>
   <br>
 
 
   <p align="center">
-  <img width="700" height="400" src="images/piazza.png"><br>
+  <img width="700" height="400" src="Documentation/images/my_account.png"><br>
+  Figure 2.0
+</p>
+<h3>2.4 Store :</h3>
+  In this page all the products priarilly shown by the admins which are uploaded by the admins or vendors. Product images, details also will be shown.<br>
+  <br>
+
+
+  <p align="center">
+  <img width="700" height="400" src="Documentation/images/store.png"><br>
+  Figure 2.0
+</p>
+<h3>2.5 Contact Us :</h3>
+  Via this page users can contact with the admins send them feedback pr messages through email.<br>
+  <br>
+
+
+  <p align="center">
+  <img width="700" height="400" src="Documentation/images/contactus.png"><br>
+  Figure 2.0
+</p>
+<h3>2.6 Buying Items :</h3>
+ This is basically cart page. Usuers can see all the products and payment slip from this page. I am still working on this page as you can see<br>
+  <br>
+
+
+  <p align="center">
+  <img width="700" height="400" src="Documentation/images/buying.png"><br>
   Figure 2.0
 </p>
 <br>

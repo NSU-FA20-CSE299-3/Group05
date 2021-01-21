@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="250" height="280" src="images/nsulogo.jpg">
+  <p align="center"><strong><img src="https://media.dhakatribune.com/uploads/2016/11/nsulogo.jpg" alt="" width="307" height="172" /></strong></p>
 </p>                                   
 <h1 align="center">Project Name: Online Art Store</h1> 
   <h2 align ="center">Course Number: CSE 299<br>

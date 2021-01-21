@@ -56,7 +56,7 @@ This project has the following features -
    <br>
  <p align="center">
    <img width="700" height="420" src="Documentation/images/register.png"><br>
-   Figure 1.0
+   Figure 2.0
  </p>
  <h3>2.3 My Account platform :</h3>
   The main feature of ‘Online Art Store’ is that users will be able to view different platforms on one window after logging in the my account once. This section is know as the profile. The users information is shown on the left.<br>
@@ -65,7 +65,7 @@ This project has the following features -
 
   <p align="center">
   <img width="700" height="400" src="Documentation/images/my_account.png"><br>
-  Figure 2.0
+  Figure 3.0
 </p>
 <h3>2.4 Store :</h3>
   In this page all the products priarilly shown by the admins which are uploaded by the admins or vendors. Product images, details also will be shown.<br>
@@ -74,7 +74,7 @@ This project has the following features -
 
   <p align="center">
   <img width="700" height="400" src="Documentation/images/store.png"><br>
-  Figure 2.0
+  Figure 4.0
 </p>
 <h3>2.5 Contact Us :</h3>
   Via this page users can contact with the admins send them feedback pr messages through email.<br>
@@ -83,7 +83,7 @@ This project has the following features -
 
   <p align="center">
   <img width="700" height="400" src="Documentation/images/contactus.png"><br>
-  Figure 2.0
+  Figure 5.0
 </p>
 <h3>2.6 Buying Items :</h3>
  This is basically cart page. Usuers can see all the products and payment slip from this page. I am still working on this page as you can see<br>
@@ -92,7 +92,7 @@ This project has the following features -
 
   <p align="center">
   <img width="700" height="400" src="Documentation/images/buying.png"><br>
-  Figure 2.0
+  Figure 6.0
 </p>
 <br>
 <br>

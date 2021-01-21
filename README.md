@@ -1,32 +1,43 @@
-<p style="text-align: center;">&nbsp;</p>
-<p style="text-align: center;">&nbsp;</p>
-<p align="center"><strong><img src="https://media.dhakatribune.com/uploads/2016/11/nsulogo.jpg" alt="" width="307" height="172" /></strong></p>
-<p align="center"><strong>North South University</strong></p>
-<p align="center">Department of Electrical &amp; Computer Engineering</p>
-<p align="center"><strong>Project Proposal</strong></p>
-<p align="center"><strong>Group No</strong>: 5</p>
-<p align="center"><strong>Fall 2020</strong></p>
-<p align="center"><strong>Project Name</strong>: Online Photo & Art Store</p>
-<p align="center"><strong>Course No</strong>: CSE 299 <strong>Sec</strong><strong>:</strong> 03</p>
-<p align="center"><strong>Faculty</strong>: Shaikh Shawon Arefin Shimon (Sas3)</p>
-<p align="center"><strong><u>Member 1</u></strong><u>:</u></p>
-<p align="center"><strong>Name</strong><strong>:</strong> Mahbub Hasan Prantik</p>
-<p align="center"><strong>ID</strong><strong>:&nbsp; </strong>1612751042</p>
-<p align="center"><strong>Email</strong><strong>:</strong> <a href="hasan.prantik@northsouth.edu">hasan.prantik@northsouth.edu</a></p>
-<p align="center"><strong>Date Prepared</strong><strong>: </strong>14/11/2020</p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;</strong></p>
+<p align="center">
+  <img width="250" height="280" src="images/nsulogo.jpg">
+</p>                                   
+<h1 align="center">Project Name: Online Art Store</h1> 
+  <h2 align ="center">Course Number: CSE 299<br>
+  Section:03</br>
+  Semester: Fall 2020</br><br>
+  Faculty Name: Shaikh Shawon Arefin Shimon</h2>
+  <h3 align="center">Student Name: Mahbub Hasan Prantik<br>
+  Student ID: 1612751042<br>
+  Email: hasan.prantik@northsouth.edu <br><br>
+  Date prepared: 16/01/2021</h3><br><br><br>
 
 
 
 
 
 
-**Introduction**
 
-*Online photo & Art store* is a online market place where artists and photographer could exhibit or sell their art works or photos. Vendors and customers both can be benefited by this website. These days because of the busy schedule of the people, they don’t have time schedule-wise to visit the art gallery to view the paintings or photography of the famous artists. Specially sometimes we see people use paintings , photos and images without the permission of original artists and artists don’t even get credits for that. Online photo and art store is a platform where the artists can display and sell their products, it is conceivable. The online art and photo store is the application that enables the clients to sell their works and make it available to the visitor’s view.
 
-An online art store is new concept of selling and purchasing art works, both digital prints and traditional paintings are available on online sites. Basically, it is a user interface kind of web page on which buyer and seller both gets a platform for their jobs. Online art store is a time, energy and money saving web site concept. Both vendors and customers can access this website and have their own accounts to store their personal information , works, wish lists, reviews etc. 
+
+
+<h2> Project Name: Online Art Store </h2><br>
+<h3 id="table-of-contents">Table of contents</h3>
+
+<ol>
+  <a href="#introduction"><li>Introduction</li><br></a>
+  <a href="#features"><li>Software Specification</li><br></a>
+  <a href="#technology"><li>Technology</li><br></a>
+  <a href="#businessplan"><li>BusinessPlan/Monetization</li></a><br>
+  <a href="#conclusion"><li>Conclusion</li></a><br><hr>
+
+</ol>
+<br>
+
+
+<h2 id="#introduction">1. Introduction</h2>
+<h3>1.1 Project Idea:</h3>
+<p>*Online photo & Art store* is a online market place where artists and photographer could exhibit or sell their art works or photos. Vendors and customers both can be benefited by this website. These days because of the busy schedule of the people, they don’t have time schedule-wise to visit the art gallery to view the paintings or photography of the famous artists. Specially sometimes we see people use paintings , photos and images without the permission of original artists and artists don’t even get credits for that. Online photo and art store is a platform where the artists can display and sell their products, it is conceivable. The online art and photo store is the application that enables the clients to sell their works and make it available to the visitor’s view.
+An online art store is new concept of selling and purchasing art works, both digital prints and traditional paintings are available on online sites. Basically, it is a user interface kind of web page on which buyer and seller both gets a platform for their jobs. Online art store is a time, energy and money saving web site concept. Both vendors and customers can access this website and have their own accounts to store their personal information , works, wish lists, reviews etc. </p>
 
  **FEATURES**
  

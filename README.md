@@ -87,7 +87,7 @@ Figure 4.0
 <ul>
     <li> USER: Will keep info about the users signing in the application.<br></li>
     <li>PLATFORM: The platform information for the signed in USER entity.</li>
-    <li>COURSE_INFO: The details of all the products associated with the specific categories</li>
+    <li>Product Info: The details of all the products associated with the specific categories</li>
 </ul><br>
 
  <h3>3.2: Unfnished works</h3>

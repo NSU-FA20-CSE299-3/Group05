@@ -1,5 +1,5 @@
 <p align="center">
-  <p align="center"><strong><img width="250" height="280" src="Documentation/images/nsulogo.jpg"></p>
+  <p align="center"><strong><img width="300" height="280" src="Documentation/images/nsulogo.jpg"></p>
 </p>                                   
 <h1 align="center">Project Name: Online Art Store</h1> 
   <h2 align ="center">Course Number: CSE 299<br>
